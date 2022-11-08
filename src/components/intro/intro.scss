@@ -3,6 +3,7 @@
 .intro {
   background-color: #B5B1EB;
   display: flex;
+  color: white;
 
   @include mobile{
     flex-direction: column;
@@ -78,7 +79,7 @@
 
         span {
           font-size: inherit;
-          color: crimson;
+          color: #6D33CC;
         }
 
         .ityped-cursor {

@@ -10,7 +10,7 @@ const Intro = () => {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ['Developer', 'Designer', 'Content Creator']
+      strings: ['Web Development', 'TypeScript', 'React', 'JavaScript']
     })
   }, [])
 
@@ -23,9 +23,9 @@ const Intro = () => {
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2>Hi there, I am</h2>
-          <h1>Mister X</h1>
-          <h3>Freelancer <span ref={textRef}></span></h3>
+          <h2>Hi there, my name is</h2>
+          <h1>Pascal</h1>
+          <h3>I am enthusiastic about <span ref={textRef}></span></h3>
         </div>
         <a href="#works">
           <img src="assets/down.png" alt="" />

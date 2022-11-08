@@ -1,4 +1,5 @@
 import { useState } from "react";
+import GitHubIcon from '@mui/icons-material/GitHub';
 import "./works.scss";
 import "./works.css";
 
@@ -8,29 +9,35 @@ export default function Works() {
     {
       id: "1",
       icon: "./assets/foodapp.png",
-      title: "Web Design",
+      title: "Food App",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "A reactjs application where you can add food to your cart and order it.",
+      desc2: "Implemented with Context Api for state management, a firebase database to manage the orders and sass for styling.",
       img:
         "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+      link: "https://illustrious-marzipan-4d47e0.netlify.app",
     },
     {
       id: "2",
-      icon: "./assets/globe.png",
-      title: "Mobile Application",
+      icon: "./assets/shoppingapp.png",
+      title: "Shopping App",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "A react.tsx application where you can shop clothes and order them",
+      desc2: "Implemented with Context Api for state management, a firebase database to manage orders and authentication and sass for styling.",
       img:
         "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+      link: "https://illustrious-marzipan-4d47e0.netlify.app",
     },
     {
       id: "3",
-      icon: "./assets/writing.png",
-      title: "Branding",
+      icon: "./assets/moneyapp.png",
+      title: "Money App",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "An app where you can manage all your expenses. Perfect when you want to save some money :)",
+      desc2: "Implemented with Context Api for state management, a firebase database to manage expenses + authentication and module.css for styling.",
       img:
         "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      link: "https://illustrious-marzipan-4d47e0.netlify.app",
     },
   ];
 
@@ -50,13 +57,21 @@ export default function Works() {
           {data.map((d) => (
             <div className="container">
               <div className="item">
-              <div className="left">
-                
-              </div>
-                <div className="right">
-                  <img src={d.icon} alt={d.icon} />
+                <div className="left">
+                  <div className="text-container">
+                    <h1 className="header">{d.title}</h1>
+                    <p className="text">{d.desc}</p>
+                    <p className="text">{d.desc2}</p>
+                    <a href={d.link}><GitHubIcon fontSize="large" /></a>
+                  </div>
                 </div>
-                
+                <div className="right">
+                  <a href={d.link}>
+                    <img src={d.icon} alt={d.icon} />
+                  </a>
+
+                </div>
+
               </div>
             </div>
           ))}
