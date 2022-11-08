@@ -15,7 +15,8 @@ export default function Works() {
       desc2: "Implemented with Context Api for state management, a firebase database to manage the orders and sass for styling.",
       img:
         "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
-      link: "https://illustrious-marzipan-4d47e0.netlify.app",
+      link: "https://fastidious-toffee-10ecfd.netlify.app",
+      github: "https://github.com/pascwin/MealsToGo",
     },
     {
       id: "2",
@@ -26,7 +27,8 @@ export default function Works() {
       desc2: "Implemented with Context Api for state management, a firebase database to manage orders and authentication and sass for styling.",
       img:
         "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
-      link: "https://illustrious-marzipan-4d47e0.netlify.app",
+      link: "https://keen-faun-94146d.netlify.app",
+      github: "https://github.com/pascwin/clothing-store",
     },
     {
       id: "3",
@@ -38,6 +40,7 @@ export default function Works() {
       img:
         "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
       link: "https://illustrious-marzipan-4d47e0.netlify.app",
+      github: "https://github.com/pascwin/my-money-tracker/tree/main/my-money",
     },
   ];
 
@@ -62,7 +65,7 @@ export default function Works() {
                     <h1 className="header">{d.title}</h1>
                     <p className="text">{d.desc}</p>
                     <p className="text">{d.desc2}</p>
-                    <a href={d.link}><GitHubIcon fontSize="large" /></a>
+                    <a href={d.github}><GitHubIcon fontSize="large" /></a>
                   </div>
                 </div>
                 <div className="right">
