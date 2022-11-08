@@ -27,7 +27,8 @@
       vertical-align: middle;
 
       @include mobile{
-        align-items: flex-start;
+        align-items: flex-end;
+        margin-bottom: 50px;
       }
 
       img {

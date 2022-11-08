@@ -14,9 +14,16 @@
     align-items: center;
     justify-content: space-between;
 
+    @include mobile {
+      padding: 5px 10px;
+  }
+
     .left {
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      color: white;
 
       .logo {
         font-size: 40px;
@@ -26,27 +33,39 @@
         margin-right: 40px;
 
         @include mobile {
-            font-size: 34px;
+            font-size: 25px;
+            margin: 5px;
         }
       }
 
       .itemContainer {
         display: flex;
         align-items: center;
-        margin-left: 30px;
+        margin-right: 30px;
 
         @include mobile{
-          display: none;
+          margin: 0px;
+          align-items: flex-end 
         }
 
         .icon {
           font-size: 18px;
           margin-right: 5px;
+
+          @include mobile{
+            margin-right: 3px;
+            font-size: 13px;
+          }
         }
 
         span {
-          font-size: 15px;
+          font-size: 18px;
           font-weight: 500;
+
+          @include mobile{
+            margin: 0px;
+            font-size: 12px;
+          }
         }
       }
     }

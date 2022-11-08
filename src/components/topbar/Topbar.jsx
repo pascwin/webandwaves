@@ -1,28 +1,17 @@
 import "./topbar.scss"
-import { Person, Mail } from '@material-ui/icons';
+import { Mail } from '@material-ui/icons';
 
-const Topbar = ({menuOpen, setMenuOpen}) => {
+const Topbar = () => {
 
     return (
-        <div className={"topbar " + (menuOpen && "active")}>
+        <div className="topbar">
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="logo">
                         webandwaves.</a>
                     <div className="itemContainer">
-                        <Person className="icon" />
-                        <span>+44 123456</span>
-                    </div>
-                    <div className="itemContainer">
                         <Mail className="icon" />
-                        <span>pasci@webandwaves.com</span>
-                    </div>
-                </div>
-                <div className="right">
-                    <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-                        <span className="line1"></span>
-                        <span className="line2"></span>
-                        <span className="line3"></span>
+                        <span>pascal-winner@web.de</span>
                     </div>
                 </div>
             </div>
