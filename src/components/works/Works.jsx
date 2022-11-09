@@ -93,7 +93,7 @@ export default function Works() {
           onClick={() => handleClick()}
         />
         <div className="footer-container">
-          <p className="footer">© webandwaves.org</p>
+          <p className="footer">© webandwaves</p>
         </div>
       </div>
     </div>

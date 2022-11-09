@@ -1,5 +1,5 @@
 import "./topbar.scss"
-import { Mail } from '@material-ui/icons';
+import MailIcon from '@mui/icons-material/Mail';
 
 const Topbar = () => {
 
@@ -10,7 +10,7 @@ const Topbar = () => {
                     <a href="#intro" className="logo">
                         webandwaves.</a>
                     <div className="itemContainer">
-                        <Mail className="icon" />
+                        <MailIcon className="icon" />
                         <span>pascal-winner@web.de</span>
                     </div>
                 </div>
